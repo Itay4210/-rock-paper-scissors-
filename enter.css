@@ -1,0 +1,44 @@
+body{
+ background-color: black;
+}
+h1{
+    text-align: center;
+    color:  #DD0004;
+    text-shadow: 2px 2px 9px red;
+    font-size: 100px;
+
+}
+
+h2{
+    color:  #DD0004;
+    font-size: 30px; 
+    margin-left: 160px;
+    
+     
+}
+#inter{
+    margin-top: 200px;
+    margin-left: 535px;
+  
+}
+#user{
+    font-size: 35px;
+    border-radius: 25px;
+    text-align: left;
+    background-color: #988a8a;
+    color: #1e0202;
+    
+}
+button{
+   margin-left: 625px;
+   margin-top: 90px;
+   height: 40px;
+   width: 250px;
+   border-radius: 30px;
+   text-align: center;
+   font-size:  x-large;
+   color: aliceblue;
+   background-color:  #882122;
+  box-shadow: 2px 2px 9px red;
+}
+

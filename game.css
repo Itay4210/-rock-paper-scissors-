@@ -1,0 +1,111 @@
+body{
+    background-color: black;
+}
+
+*{
+    margin: 0px;
+    padding: 0px;
+    box-sizing: border-box;
+}
+
+ nav{
+        width: 100%;
+        height: 75px;
+        line-height: 75px;
+        padding: 0px 100px;
+      background-color: red;       
+             
+ }
+#line{
+    font-size: 30px;
+    font-weight: bold;
+    float: left;
+    color: white;
+    text-shadow: 3px 3px 15px black;
+    text-transform: uppercase;
+    letter-spacing: 1.5px;
+    cursor: pointer; 
+}
+
+nav ul{
+    float: right;
+}
+
+nav li{
+    display: inline-block;
+    list-style: none;
+}
+
+.uk-button-text{
+    background-color: Transparent;
+    background-repeat:no-repeat;
+    border: none;
+    cursor:pointer;
+    overflow: hidden;
+    outline:none;
+    padding: 15px;
+    margin-right: 130px;
+    font-size: large;
+    color: white;
+    text-shadow: 5px 5px 25px black;
+}
+#img{
+    width: 65px;
+    height: 40px;
+    margin-top: 10px;
+    margin-left: 30px;
+    border-radius: 100px;
+     
+}
+
+
+.frame{
+    margin-top: 10px;
+    display: flex;   
+    margin-left: 500px;
+}
+
+.frame div {
+    margin: 10px;
+    padding: 20px;
+    font-size: 80px;
+    color: red;
+   text-shadow: 2px 2px 9px red;
+  }
+
+  .frame1{
+    margin-top: 10px;
+    display: flex;   
+    margin-left: 470px;
+    margin-top: -80px;
+}
+
+.frame1 div {
+    padding: 110px;
+    font-size: 80px;
+    color: blue;
+   text-shadow: 2px 2px 9px red;
+   
+  }
+
+  .frame2{
+    margin-top: 10px;
+    display: flex;   
+    margin-left: 520px;
+    margin-top: 70px;
+    
+}
+
+.frame2 button {
+    background-color: Transparent;
+    background-repeat:no-repeat;
+    border: none;
+    cursor:pointer;
+    overflow: hidden;
+    outline:none;
+    padding: 15px;
+    text-shadow: 2px 2px 9px red;
+   font-size: 90px;
+  }
+
+

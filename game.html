@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="game.css">
+    <title>Document</title>
+    <nav>
+        <div class="logo">
+        <p id="line">🖐️rock paper scissors🪨</p>
+        </div>
+        <ul>
+            <li><a href="http://127.0.0.1:5500/last_result.html"><button class="uk-button-text" onclick="preventBack()">last result</button></a></li>
+            <li><a href="http://127.0.0.1:5500/enter.html"><button class="uk-button-text" onclick="preventBack()">out</button></a></li>
+            <li><div id="img"></div></li>
+        </ul>
+    </nav>
+</head>
+<body>
+    <div>
+    
+</div>
+    <div class="frame">
+      <div id="yourName"></div>  
+      <div>:</div>
+      <div>computer</div>
+    </div>
+
+    <div class="frame1">
+       <div id="myPoint"></div>
+       <div id="computerPoint">0</div>
+    </div>
+  
+    <div class="frame2">
+        <button id="button" onclick="choice(1)">👊</button>
+        <button id="button" onclick="choice(2)">✌️</button>
+        <button id="button" onclick="choice(3)">🖐️</button>     
+    </div>
+    
+   <script src="game.js"></script>
+</body>
+</html>
