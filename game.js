@@ -2,6 +2,8 @@ let valueOfButton=0;//מקבל את ערך המשתנה מהכפתור
 let random=Math.floor(Math.random() * 3) + 1;// מספר רנדומלי לערך המחשב
 let playerPoints=0;// מספר הנקודות שיש לשחקן
 let computerPoint=0; // מספר הנקודות שיש למחשב
+let valuePointPlayer= document.getElementById("myPoint");
+let gameStatut= false;
 console.log("random: "+random);
 document.getElementById("myPoint").innerHTML=playerPoints; // מכניס את הערך הראשוני(0) למספר הנקודות של השחקן
 document.getElementById("computerPoint").innerHTML=computerPoint // מכניס את הערך הראשוני(0) למספר הנקודות של השחקן
@@ -9,12 +11,13 @@ document.getElementById("computerPoint").innerHTML=computerPoint // מכניס �
 // פןנקציה שחוסמת חזרה אחורה
 function preventBack() {
     window.history.forward();
-}
-
-setTimeout("preventBack()", 0);
+    setTimeout("preventBack()", 0);
 window.onunload = function() {
     null
 }
+}
+
+
 
 // הוספת תמונה לבר
 const imgDiv = document.getElementById("img");
@@ -33,8 +36,15 @@ function choice(num){
     console.log(valueOfButton);
     calculatePointPlayer(); // פונקציה לחישוב נקודות השחקן
     calculatePointComputer();// פונקציה לחישוב נקודות המחשב
-    random=Math.floor(Math.random() * 3) + 1; // אחרי הלחיצה והחישוב אני רוצה שוב מספר רנדומלי לתור הבא
-    console.log("random: "+random);
+    endGame();
+    if(gameStatut==false){
+        random=Math.floor(Math.random() * 3) + 1; // אחרי הלחיצה והחישוב אני רוצה שוב מספר רנדומלי לתור הבא
+        console.log("random: "+random);
+    
+    }else{
+        random=0;
+    }
+   
 
 }
 // פונקציה המחשבת את נקודות השחקן
@@ -70,3 +80,15 @@ function calculatePointComputer(){
     }
 }
 
+
+function endGame(){
+    if(playerPoints==3){
+        alert("you won");
+        gameStatut=true;
+        console.log("you won");
+    }else if(computerPoint==3){
+        alert("you lost");
+        gameStatut=true;
+        console.log("you lost");
+    }
+}
